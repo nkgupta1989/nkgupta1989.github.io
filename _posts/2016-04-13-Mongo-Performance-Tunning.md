@@ -1,14 +1,14 @@
 ---
 layout: post
-title: My First Experience in Mongo Tunning
+title: Mongo Performance Tunning
 ---
 
-Let me first explain the conditions in which we were, using mongodb, with around 60GB data, around 14 million records in a collections with an average cpm of 20K and a target to achieve average response time of 10ms.
+Let me first explain the conditions in which we were, using mongodb, with around 60GB data, around 50 million records in 10 collections with an average cpm of 20K and a target to achieve average query response time of 10ms.
 
-In current world it is tough to find out the problem as compared to its fix, same was the case with us, We first needed to know the root cause for slowness and then fix it up.
+So the First and the most important task for us was to find out the slow queries killing the mongodb performance.
 
-Now mongo itself provides a hell lot of things, to find and figure out the problems and fix them.
-These are the steps that we followed to achieve our target.
+MongoDB itself provides a lot of utilities or commands, to find and figure out the slow queries and fix them.
+These are the steps that we followed to tune our mongo to response with in 10ms
 
  __Step 1:__
   
@@ -49,9 +49,16 @@ These are the steps that we followed to achieve our target.
  Now lets analyse the slow query logs:-
  We used "fluent-plugin-mongo-slow-query" to analyse the slow query mongo logs, Attached is the format of the output file.
  [fluent-plugin-mongo-slow-query](https://github.com/caosiyang/fluent-plugin-mongo-slow-query)
- Sample generated File:- TODO:- attach a sample output excel
+ Check a [sample response](https://nkgupta1989.github.io/samples/sample1-mongoslow.csv) csv.
     
  __Step 6:__
  
  Now we know the slow queries killing our mongodb, Use the required Indexes to fix them up.
  [Mongo Indexes docs](https://docs.mongodb.org/manual/indexes/)
+ 
+ __Step 7:__
+  
+  Scheduled the analyzed slow query report generation on daily bases.
+   
+   
+_Hope this blog will give you a heads up on how to improve mongodb performance. Stay tuned for more blogs._      
