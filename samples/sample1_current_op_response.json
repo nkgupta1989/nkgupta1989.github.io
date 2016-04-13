@@ -1,0 +1,43 @@
+{
+  "inprog" : [
+    {
+      "desc" : "conn100",
+      "threadId" : "0x4341ee0",
+      "connectionId" : 100,
+      "opid" : 10385318,
+      "active" : true,
+      "secs_running" : 2,
+      "microsecs_running" : NumberLong(2852795),
+      "op" : "getmore",
+      "ns" : "local.oplog.rs",
+      "query" : {
+                "ts" : {
+                "$gte" : Timestamp(1460465511, 1001)
+                 }
+        },
+      "client" : "127.0.0.1:46541",
+      "numYields" : 0,
+      "locks" : {
+
+       },
+      "waitingForLock" : false,
+      "lockStats" : {
+                "Global" : {
+                          "acquireCount" : {
+                                    "r" : NumberLong(6)
+                          }
+                },
+                "Database" : {
+                          "acquireCount" : {
+                                    "r" : NumberLong(3)
+                          }
+                },
+                "oplog" : {
+                          "acquireCount" : {
+                                    "r" : NumberLong(3)
+                          }
+                }
+      }
+    }
+  ]
+}
