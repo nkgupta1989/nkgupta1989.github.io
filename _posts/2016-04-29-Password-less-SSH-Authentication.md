@@ -14,7 +14,7 @@ Sample command to SSH using the private key.
 
         ssh -i /home/{key-name}.pem root@{instance-IP}
 
-![alt text](https://nkgupta1989.github.io/images/SSHAuthentication.png "Password less SSH Authentication")
+![alt text](http://nkgupta1989.github.io/images/sshauthentication.png "Password less SSH Authentication")
 
 
 Now listing down the steps that will happen in the background :-
