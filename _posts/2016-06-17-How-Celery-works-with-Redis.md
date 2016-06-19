@@ -3,7 +3,10 @@ layout: post
 title: How Celery interacts with Redis
 ---
 
-Hi Guys, Sharing few learning which I learnt today regarding how celery works.
+As we know that there are 2 python modules {celery} and {celery-beat}, which we can be used to execute the asynchronous tasks, and to run the schedule tasks.
+
+
+In this blog I will be sharing few learning which I learnt while working on celery workers.
 
 Pre-requisite:-
 A very basic knowledge of 
@@ -12,8 +15,6 @@ A very basic knowledge of
     celery
     celery-beat
     redis
-
-As we know that there are 2 python modules {celery} and {celery-beat}, which we are currently using to execute the asynchronous tasks, and to run the schedule tasks.
 
 Celery is the worker, which actually executes the tasks, and celery-beat is the scheduler which actually triggers the tasks. Now in order to communicate with each other they can use Redis or Rabbit-MQ, a simple key-value pair databases.
 

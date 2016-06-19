@@ -1,6 +1,7 @@
-TODO :- Add appropriate links in the blog.
-
-Listing down some of the best practises for a production level project.
+---
+layout: post
+title: Best project practices
+---
 
 __1. TEST CASES :__
 
