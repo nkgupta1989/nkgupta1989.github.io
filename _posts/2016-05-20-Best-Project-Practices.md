@@ -8,7 +8,7 @@ Listing down some good practises that we have used in our project.
  - TEST CASES
  - Automated Deployment
  - Monitoring tool
- - Production server setup script
+ - Automate IT infrastructure
  - Peer code review
 
  
@@ -72,7 +72,7 @@ The most important thing to consider here are the TC's, as they are ensuring tha
 Ideal projects have a TC's coverage of around __95-97%.__
          
     
-__3. Monitoring tool__
+__3. App Monitoring tool__
  
 Its always easy to solve a problem, then to figure out what the problem is, BUT there should be a way of acknowledging or alarming that there is a problem even before figuring out what the problem is.
 
@@ -89,16 +89,16 @@ Now NewRelic also supports custom metrices, through this what we can accomplish 
 Suppose you want to monitor the transactions done on your website, and want the system to generate an alert whenever the numbers of transactions reduces then a certain number in a specified period of time. To accomplish this, just put this information in newrelic whenever a transaction happens on your system, and set the alert policies for this custom matrix, and get real time alert for any issue in transactions rather knowing it through customer complains through twitter or fb.
     
     
-__4. Production server setup script__
+__4. Automate IT infrastructure__
 
 Use cases:- Suddenly a production machine crashes, and you need to setup a new machine, with all the installations like nodejs, strongpm, mongo, redis, code deployment, nginx, host enteries etc. Another use case could be, you have a campaign coming up, and it is expected to have more 4X traffic growth and you need to have an instantaneous prod machine ready.
 If you are on AWS than it can be directly done by creating an image of the machine and replicating it, or can be accomplish by auto scaling in AWS.
 
 Now let us discuss how we managed to do it our project.
 
-TODO:- comparission of different tools
+Here is very good link comparing the tools to automate the IT infrastructure.
 
-We preferred ansible over other mentioned tools and we used ansible extensively to setup mongo servers with the required replication set, redis with cluster support, nodejs, deployment through strong-pm, nginx etc. After completing the scripts, what all was required, was to enter the new inventory in the inventory file, and run the ansible-playbook.
+We preferred ansible over other mentioned tools like, puppet or chef and we used ansible extensively to setup mongo servers with the required replication set, redis with cluster support, nodejs, deployment through strong-pm, nginx etc. After completing the scripts, what all was required, was to enter the new inventory in the inventory file, and run the ansible-playbook.
   
 Writing these scripts will give a deep knowledge about setting up production machines and are very good for an individual knowledge growth.
     
@@ -117,6 +117,7 @@ There are some very minor mistakes that can be easily avoided by code review, wh
 Somethings that can be checked in code review are whether config's are defined properly or not, whether the code is modularized or not, extract those functions that are generic and can be used across the project and add them in the library files, removal of un-necessary if-else statements.
 
 
+Hope this blog will make help you to make your app more reliable, fast, secure, and will automate most of the tasks.
 
 
 
