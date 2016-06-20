@@ -3,6 +3,16 @@ layout: post
 title: Best project practices
 ---
 
+Listing down some good practises that we have used in our project.
+ 
+ - TEST CASES
+ - Automated Deployment
+ - Monitoring tool
+ - Production server setup script
+ - Peer code review
+
+ 
+
 __1. TEST CASES :__
 
 Test cases are an integral part of coding, no developer can run from them.
@@ -58,22 +68,15 @@ The most important thing to consider here are the TC's, as they are ensuring tha
 Ideal projects have a TC's coverage of around __95-97%.__
          
     
-__3. Peer code review__
-
-This is a very standard practise followed across many companies and is a must required one.
-
-There are some very minor mistakes that can be easily avoided by code review, which further increases the quality of code.
-
-Somethings that can be checked in code review are whether config's are defined properly or not, whether the code is modularized or not, extract those functions that are generic and can be used across the project and add them in the library files, removal of un-necessary if-else statements.
-
- 
-__4. Monitoring tool__
- 
-TODO :- Newrelic screen shots
+__3. Monitoring tool__
  
 Its always easy to solve a problem, then to figure out what the problem is, BUT there should be a way of acknowledging or alarming that there is a problem even before figuring out what the problem is.
 
 As per me, NewRelic is one of the best monitoring tool, it not only reports the transactions, rpm, average response time, throughput, But also minutelly reports the time taken in each any every activity in a transaction like, time taken in mongo, node, redis, external service, request queuing etc.  This proves to be a great help in figuring out where the problem is.
+
+![alt text](http://nkgupta1989.github.io/images/newrelic-screen-shot.png "Newrelic screenshot")
+
+New relic screen shot, describing :- average response time of 51.6ms, average rpm 6.3K rpm and an apdex score of 0.93
  
 We can set various alert conditions in Newrelic, like an alert can be set on the average response time of the app, like send an alert if the average response time is more than 50 ms. There could be an alert on the apdex score, like through an alert if the apdex score is less than 0.7 seconds.
     
@@ -82,7 +85,7 @@ Now NewRelic also supports custom metrices, through this what we can accomplish 
 Suppose you want to monitor the transactions done on your website, and want the system to generate an alert whenever the numbers of transactions reduces then a certain number in a specified period of time. To accomplish this, just put this information in newrelic whenever a transaction happens on your system, and set the alert policies for this custom matrix, and get real time alert for any issue in transactions rather knowing it through customer complains through twitter or fb.
     
     
-__5. Production server setup script__
+__4. Production server setup script__
 
 Use cases:- Suddenly a production machine crashes, and you need to setup a new machine, with all the installations like nodejs, strongpm, mongo, redis, code deployment, nginx, host enteries etc. Another use case could be, you have a campaign coming up, and it is expected to have more 4X traffic growth and you need to have an instantaneous prod machine ready.
 If you are on AWS than it can be directly done by creating an image of the machine and replicating it, or can be accomplish by auto scaling in AWS.
@@ -101,6 +104,14 @@ Adding a very simple task below as reference, to create a log directory in the /
       file: path=/var/log/app-log/ state=directory owner=deployer group=deployer
     
   
+__5. Peer code review__
+
+This is a very standard practise followed across many companies and is a must required one.
+
+There are some very minor mistakes that can be easily avoided by code review, which further increases the quality of code.
+
+Somethings that can be checked in code review are whether config's are defined properly or not, whether the code is modularized or not, extract those functions that are generic and can be used across the project and add them in the library files, removal of un-necessary if-else statements.
+
 
 
 
