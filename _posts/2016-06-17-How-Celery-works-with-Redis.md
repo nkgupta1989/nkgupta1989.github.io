@@ -4,12 +4,13 @@ title: How Celery interacts with Redis
 ---
 
 There are 2 python modules {celery} and {celery-beat}, which we can be used to execute the asynchronous tasks, and to run the schedule tasks.
-Pre-requisites are:- A very basic knowledge of 
+Pre-requisites are:- A very basic knowledge of
 
  - python
  - celery
  - celery-beat
  - redis
+
 
 
 In this blog I will be sharing few learning which I learnt while working on celery workers.

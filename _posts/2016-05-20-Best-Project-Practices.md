@@ -50,6 +50,10 @@ Some of the packages that can be used for writing TC's are
     mocha for a nodejs project
     unittest python module for a python project
 
+Please find below a screen shot of test case coverage report.
+
+![alt text](http://nkgupta1989.github.io/images/test-case-coverage.png "Test case coverage report")
+
 
 __2. Automated Deployment__ 
 
