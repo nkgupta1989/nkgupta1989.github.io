@@ -3,7 +3,7 @@ layout: post
 title: Password less SSH Authentication
 ---
 
-In this blog will be explaining how password less SSH authentication works, means using the pem file.
+In this blog I will be stepwise explaining the flow of password less SSH authentication using the pem file. Pre-requisites are a basic knowledge of servers and SSH.
 
 When ever we create a SSH key using ssh-keygen, we get public-private key pair. 
 Public key is the one that should be placed in the remote server and private key is the one that should be privately shared with the people with whom you want to give the access to the remote server.
