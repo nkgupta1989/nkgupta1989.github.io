@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tips for On Premises to AWS Migration
+date: 2016-06-29 00:00:00
 ---
 
 In this blog, I will be sharing some things which we learnt while migrating our app from on-Premises to AWS. These are not in any specific order, each point is a unique learning in itself.
