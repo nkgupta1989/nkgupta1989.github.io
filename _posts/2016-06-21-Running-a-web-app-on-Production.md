@@ -1,3 +1,8 @@
+---
+layout: post
+title: Running a web app on production boxes
+---
+
 In this blog, I will be explaining the architecture for a production level app, including the app servers (loopback node application), web servers (nginx), mongo (replica set), redis (M-S replica), ELB (if on AWS) along with the security groups, and data communications among them.
 
 ![alt text](http://nkgupta1989.github.io/images/aws-architecture-blog.jpg "Server level diagram")
