@@ -4,6 +4,7 @@ title: Tips for On Premises to AWS Migration
 ---
 
 In this blog, I will be sharing some things which we learnt while migrating our app from on-Premises to AWS. These are not in any specific order, each point is a unique learning in itself.
+
   
  - Automate the IT setup (Most important, this way the automated setup script can be shared across the organisation and a lot of manual work can be avoided)
  - Always start with smaller instances, and create new servers with automated script on the fly whenever required.
