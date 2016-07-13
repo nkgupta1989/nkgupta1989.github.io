@@ -4,12 +4,13 @@ title: Why Nodejs
 ---
 
 Listing down reasons for anyday choosing Nodejs over any other programming language.
-
+ 
  - Its lightening Fast
  - Single Event loop
  - Package Manager (NPM)
  - Async behavior (Additional speed boast)
  - At last its javascript (Will help in Mongo shell too)
+
 
 
 __1. Its lightening Fast :__
