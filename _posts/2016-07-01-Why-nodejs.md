@@ -3,7 +3,7 @@ layout: post
 title: Why Nodejs
 ---
 
-Listing down some of the reasons for blindly choosing Nodejs over any other programming language.
+Listing down reasons for anyday choosing Nodejs over any other programming language.
 
  - Its lightening Fast
  - Single Event loop
