@@ -12,6 +12,7 @@ Listing down some of the ways, through which we can cache the api response and m
  
  
 Pre-requisites are :- 
+
   1. Basic knowledge of REST api's
   2. Basic knowledge of CDN servers
   3. Knowledge of any In-memory database
