@@ -12,9 +12,9 @@ Listing down some of the ways, through which we can cache the api response and m
  
  
 Pre-requisites are :- 
- - Basic knowledge of REST api's
- - Basic knowledge of CDN servers
- - Knowledge of any In-memory database
+  1. Basic knowledge of REST api's
+  2. Basic knowledge of CDN servers
+  3. Knowledge of any In-memory database
 
 Lets take them bottom to top, and first discuss the approach to use an in-memory database. 
 
@@ -49,11 +49,11 @@ AFTER:-
     
 
 Some Important points
-    1. It is Faster to access an in-memory database then Query persistant dbs like MySQL or mongodb, because to access RAM is faster then accessing the main memory.
-    2. Cache time is very important, it should be such that we will get the benefit from the caching and also save ourself from showing stale data to users.
-    3. Properly monitor the hit to the miss ratio.
-    4. Always prefix the cache key with some constant string, it will help you to flush out the cache without any problem.
-    5. Use proper data type provided by redis to cache the data.
+  1. It is Faster to access an in-memory database then Query persistant dbs like MySQL or mongodb, because to access RAM is faster then accessing the main memory.
+  2. Cache time is very important, it should be such that we will get the benefit from the caching and also save ourself from showing stale data to users.
+  3. Properly monitor the hit to the miss ratio.
+  4. Always prefix the cache key with some constant string, it will help you to flush out the cache without any problem.
+  5. Use proper data type provided by redis to cache the data.
     
     
 __2. Varnish :__
@@ -68,11 +68,11 @@ __3. CDN servers :__
 
 One of the most important, easy and reliable source to offload and speedup the static web requests.
 Advantages
-    1. CDN servers are geography distributed through out earth, and the content is served from the web server that is closest to the requester to give a speed boast by reducing the network latency.
-    2. One very basic advantage of using CDN server is, it reduces the network hopes, between the user and webservers, as the CDN companies have direct tie-ups with the network operators, this gives boast of 30%, even without caching anything on CDN.
-    3. Server all the static html, js, css files through CDN, why to waste app-server CPU cycles for serving static content.
-    4. Cache the static api's like the one mentioned above at the CDN level to further give a boast in the api response time and user exp.
-    5. Companies like Akamai, which is a giant in providing CDN services, provides horizontal caching on all the servers for a web request, and tries to get the response from the nearest CDN server if not found one the first CDN server, instead of directly hitting the web server. 
+  1. CDN servers are geography distributed through out earth, and the content is served from the web server that is closest to the requester to give a speed boast by reducing the network latency.
+  2. One very basic advantage of using CDN server is, it reduces the network hopes, between the user and webservers, as the CDN companies have direct tie-ups with the network operators, this gives boast of 30%, even without caching anything on CDN.
+  3. Server all the static html, js, css files through CDN, why to waste app-server CPU cycles for serving static content.
+  4. Cache the static api's like the one mentioned above at the CDN level to further give a boast in the api response time and user exp.
+  5. Companies like Akamai, which is a giant in providing CDN services, provides horizontal caching on all the servers for a web request, and tries to get the response from the nearest CDN server if not found one the first CDN server, instead of directly hitting the web server. 
      
      
 
