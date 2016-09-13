@@ -49,6 +49,7 @@ AFTER:-
     
 
 Some Important points
+
   1. It is Faster to access an in-memory database then Query persistant dbs like MySQL or mongodb, because to access RAM is faster then accessing the main memory.
   2. Cache time is very important, it should be such that we will get the benefit from the caching and also save ourself from showing stale data to users.
   3. Properly monitor the hit to the miss ratio.
@@ -68,6 +69,7 @@ __3. CDN servers :__
 
 One of the most important, easy and reliable source to offload and speedup the static web requests.
 Advantages
+
   1. CDN servers are geography distributed through out earth, and the content is served from the web server that is closest to the requester to give a speed boast by reducing the network latency.
   2. One very basic advantage of using CDN server is, it reduces the network hopes, between the user and webservers, as the CDN companies have direct tie-ups with the network operators, this gives boast of 30%, even without caching anything on CDN.
   3. Server all the static html, js, css files through CDN, why to waste app-server CPU cycles for serving static content.
