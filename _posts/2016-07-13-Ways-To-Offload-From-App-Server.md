@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Ways to Offload the api requests from APP SERVER
+title:  Ways to reduce the api response time.
 ---
 
 Listing down some of the ways, through which we can cache the api response and make the api faster, and offload the load from the server.
  
  - CDN server caching (Akamai)
- - Varnish (using redis or memcahce)
+ - Varnish (using redis or memcache)
  - Using Redis or memcache or in-memory database to store main db result
  
  
