@@ -4,8 +4,9 @@ title:  Reviews and Ratings backend using Loopback.
 ---
 
 Objective :- To have a working backend with required api's for a stand alone authenticated reviews and ratings system.
+
  - Programming language (nodejs)
- - Framework (loopback (strongloop https://strongloop.com/))
+ - Framework strongloop ( [strongloop](https://strongloop.com/) )
  - Database (in-memory)
  
   
@@ -14,9 +15,9 @@ Pre-requisites are :-
   1. Basic knowledge of REST api's only.
   2. System with nodejs installed on it.
 
-Github repo for the code :-
+"Github-repo-for-this-app" :-
+[Github-repo-for-this-app](https://github.com/nkgupta1989/ratingsAndReviews)
 
-https://github.com/nkgupta1989/ratingsAndReviews
 
 Model's list
  
@@ -60,5 +61,5 @@ It will look something like this.
 ![alt text](http://nkgupta1989.github.io/images/image2.png "hotelreview image")
 ![alt text](http://nkgupta1989.github.io/images/image3.png "image api's image'")
 
-Here is the github repo for the code generated from the above steps.
-https://github.com/nkgupta1989/ratingsAndReviews
+"Github-repo-for-this-app" :-
+[Github-repo-for-this-app](https://github.com/nkgupta1989/ratingsAndReviews)
